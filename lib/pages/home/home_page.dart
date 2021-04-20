@@ -1,4 +1,5 @@
 import 'package:dev_quiz/pages/home/widgets/app_bar/main.dart';
+import 'package:dev_quiz/pages/home/widgets/level_button/level_button_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -11,6 +12,9 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarWidget(),
+      body: LevelButtonWidget(
+        label: 'Fácil',
+      ),
     );
   }
 }
